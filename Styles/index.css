@@ -90,6 +90,10 @@ header {
     padding-right: 8px;
 }
 
+/* Plans section style */
+
+
+
 /* Responsive style */
 
 /* for mobile */
@@ -122,11 +126,38 @@ header {
         position: relative;
         left: 30px;
     }
+
+    .previous-year-failure-container{
+        flex-direction: column;
+    }
+
+    .failure-img img{
+        padding-left: 50px;
+        margin: 0;
+        height: 500px;   
+    }
+
+    .failure-list{
+        padding: 0;
+        margin-top: -50px;
+    }
+    .failure-list-heading{
+        text-align: center;
+    }
+
+   .failure-list-description{
+    padding: 20px;
+   }
+
+   .failure-list ul{
+    padding-left: 25px;
+    padding-top: 10px;
+   }
 }
 
 /* for tablet */
 
-@media screen and (min-width:576px) and (max-width:960px) {
+@media screen and (min-width:576px) and (max-width:1060px) {
     header {
         background-color: beige;
         /* height: fit-content; */
@@ -157,4 +188,29 @@ header {
         right: 130px;
 
     }
+
+    .previous-year-failure-container{
+        flex-direction: column;
+    }
+
+
+    .failure-list{
+        padding: 0;
+        margin-top: -50px;
+    }
+
+    .failure-list-heading{
+        text-align: center;
+    }
+
+    .failure-list-description{
+        padding: 0 80px;
+        text-align: center;
+       }
+    
+       .failure-list ul{
+        padding-left: 120px;
+        padding-top: 20px;
+       }
+
 }
