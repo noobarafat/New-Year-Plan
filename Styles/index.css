@@ -159,13 +159,78 @@ header {
 
 /* footer style */
 
+footer {
+    display: flex;
+    gap: 300px;
+    padding: 130px 130px 100px 160px;
+    background-color: var(--Dark-01, #151414);
+    color: white;
+}
 
+.footer-contact{
+    padding-left: 100px;
+}
+
+.footer-contact h1 {
+    color: #F8F8F8;
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.footer-contact p {
+    color: #FFF;
+    font-weight: 400;
+    line-height: 26px;
+    width: 485px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.subscribe{
+    padding-top: 50px;
+}
+
+.subscribe h2 {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.subscribe input {
+    background: var(--Dark-01, #151414);
+    padding: 15px 45px;
+    border: 1px solid white;
+    border-radius: 10px;
+
+}
+
+
+.subscribe button {
+    margin-top: 20px;
+    background: b;
+    border-radius: 8px;
+    background: #005FAC;
+    padding: 8px 12px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid white;
+
+}
 
 /* Responsive style */
 
 /* for mobile */
 
 @media screen and (max-width:576px) {
+   
+
     header {
         background-image: none;
         background-color: beige;
@@ -195,7 +260,7 @@ header {
     }
 
     .previous-year-failure-container,
-    .plans-container {
+    .plans-container , footer {
         flex-direction: column;
     }
 
@@ -256,7 +321,22 @@ header {
         display: none;
     }
 
+    footer{
+        margin: 0;
+        padding: 50px 40px;
+    }
 
+    .footer-contact{
+        padding: 0;
+        margin: 0;
+    }
+
+    .subscribe{
+        margin: 0;
+        padding: 0;
+        position: relative;
+       bottom:170px;
+    }
 }
 
 /* for tablet */
@@ -293,7 +373,7 @@ header {
 
     }
 
-    .previous-year-failure-container {
+    .previous-year-failure-container , footer{
         flex-direction: column;
     }
 
@@ -321,12 +401,12 @@ header {
         margin: 0 50px;
     }
 
-    .watch-container{
+    .watch-container {
         margin-left: 50px;
         width: 900px;
     }
 
-    .watch-container h1{
+    .watch-container h1 {
         padding: 70px 500px 20px 50px;
     }
 
