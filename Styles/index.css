@@ -7,6 +7,8 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+/* Header style */
+
 header {
     background-image: url('../images/banner/banner3.png');
     background-size: cover;
@@ -39,4 +41,73 @@ header {
     font-size: 20px;
     font-weight: 600;
     color: blue;
+}
+
+
+/* Responsive style */
+
+/* for mobile */
+
+@media screen and (max-width:576px) {
+    header{
+        background-image: none;
+        background-color: beige;
+        height: auto;
+        
+    }
+
+    .header h1 {
+        color: blue;
+        padding: 10px;
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .header-title-description{
+        padding: 0;
+        color: rgb(85, 82, 82);
+        text-align: center;
+    }
+
+    .header-button{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        position: relative;
+        left: 30px;
+    }
+}
+
+/* for tablet */
+
+@media screen and (min-width:576px) and (max-width:960px){
+    header{
+        background-color: beige;
+        /* height: fit-content; */
+        background-image: none;
+        height: auto;
+    }
+    .header h1 {
+        color: blue;
+        padding: 10px;
+        font-size: 55px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header-title-description{
+        padding: 0;
+        color: rgb(85, 82, 82);
+        text-align: center;
+        margin: 10px 30px;
+    }
+
+    .header-button{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        position: relative;
+        right: 130px;
+       
+    }
 }
