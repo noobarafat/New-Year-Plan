@@ -44,16 +44,62 @@ header {
 }
 
 
+/* Previous year failure part */
+
+.previous-year-failure-container {
+    display: flex;
+    gap: 130px;
+    margin-top: 100px;
+}
+
+.failure-img img {
+    padding-left: 200px;
+}
+
+.failure-list {
+    padding-top: 200px;
+}
+
+.failure-list-heading {
+    color: var(--Dark-01, #151414);
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.failure-list-description {
+    padding-right: 350px;
+    color: var(--Dark-02, #444343);
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.failure-list ul{
+    padding-left: 10px;
+    padding-top: 20px;
+    list-style-type: none;
+}
+
+.failure-list ul li{
+    padding-bottom: 10px;
+}
+
+.failure-list ul li::before{
+    content: "\2713";
+    color: green;
+    padding-right: 8px;
+}
+
 /* Responsive style */
 
 /* for mobile */
 
 @media screen and (max-width:576px) {
-    header{
+    header {
         background-image: none;
         background-color: beige;
         height: auto;
-        
+
     }
 
     .header h1 {
@@ -63,13 +109,13 @@ header {
         text-align: center;
     }
 
-    .header-title-description{
+    .header-title-description {
         padding: 0;
         color: rgb(85, 82, 82);
         text-align: center;
     }
 
-    .header-button{
+    .header-button {
         text-align: center;
         margin-top: 20px;
         margin-bottom: 30px;
@@ -80,13 +126,14 @@ header {
 
 /* for tablet */
 
-@media screen and (min-width:576px) and (max-width:960px){
-    header{
+@media screen and (min-width:576px) and (max-width:960px) {
+    header {
         background-color: beige;
         /* height: fit-content; */
         background-image: none;
         height: auto;
     }
+
     .header h1 {
         color: blue;
         padding: 10px;
@@ -95,19 +142,19 @@ header {
         margin-top: 20px;
     }
 
-    .header-title-description{
+    .header-title-description {
         padding: 0;
         color: rgb(85, 82, 82);
         text-align: center;
         margin: 10px 30px;
     }
 
-    .header-button{
+    .header-button {
         text-align: center;
         margin-top: 20px;
         margin-bottom: 30px;
         position: relative;
         right: 130px;
-       
+
     }
 }
