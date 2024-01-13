@@ -74,23 +74,61 @@ header {
     line-height: 26px;
 }
 
-.failure-list ul{
+.failure-list ul {
     padding-left: 10px;
     padding-top: 20px;
     list-style-type: none;
 }
 
-.failure-list ul li{
+.failure-list ul li {
     padding-bottom: 10px;
 }
 
-.failure-list ul li::before{
+.failure-list ul li::before {
     content: "\2713";
     color: green;
     padding-right: 8px;
 }
 
 /* Plans section style */
+.plans-content-container {
+    background: #f5eaea;
+    margin: 0 140px;
+    border-radius: 16px;
+}
+
+.plans-title {
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 60px;
+    color: var(--Dark-01, #151414);
+    font-size: 40px;
+    font-weight: 700px;
+    padding-top: 50px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0px 50px 50px 50px;
+
+}
+
+.plans-container h3 {
+    padding: 8px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.plans-container p {
+    color: var(--Dark-03, #737272);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
 
 
 
@@ -127,32 +165,66 @@ header {
         left: 30px;
     }
 
-    .previous-year-failure-container{
+    .previous-year-failure-container , .plans-container {
         flex-direction: column;
     }
 
-    .failure-img img{
+    .failure-img img {
         padding-left: 50px;
         margin: 0;
-        height: 500px;   
+        height: 500px;
     }
 
-    .failure-list{
+    .failure-list {
         padding: 0;
         margin-top: -50px;
     }
-    .failure-list-heading{
+
+    .failure-list-heading {
         text-align: center;
     }
 
-   .failure-list-description{
-    padding: 20px;
-   }
+    .failure-list-description {
+        padding: 20px;
+    }
 
-   .failure-list ul{
-    padding-left: 25px;
-    padding-top: 10px;
-   }
+    .failure-list ul {
+        padding-left: 25px;
+        padding-top: 10px;
+    }
+
+    .plans-content-container {
+        background: none;
+        margin-top: -100px;
+
+
+    }
+
+    .plans-container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .plans{
+        margin-bottom: 50px;
+    }
+
+    .plans-container h3{
+        font-size: 25px;
+    }
+
+
+    .plans-container p{
+        font-size: 20px;
+    }
+
+    .plans-title{
+        text-align: center;
+    }
+
+
+
+
 }
 
 /* for tablet */
@@ -189,28 +261,32 @@ header {
 
     }
 
-    .previous-year-failure-container{
+    .previous-year-failure-container {
         flex-direction: column;
     }
 
 
-    .failure-list{
+    .failure-list {
         padding: 0;
         margin-top: -50px;
     }
 
-    .failure-list-heading{
+    .failure-list-heading {
         text-align: center;
     }
 
-    .failure-list-description{
+    .failure-list-description {
         padding: 0 80px;
         text-align: center;
-       }
-    
-       .failure-list ul{
+    }
+
+    .failure-list ul {
         padding-left: 120px;
         padding-top: 20px;
-       }
+    }
+
+    .plans-content-container{
+        margin: 0 50px;
+    }
 
 }
