@@ -129,6 +129,35 @@ header {
 
 }
 
+/* watch section style */
+
+.watch-container {
+    width: 1140px;
+    height: 300px;
+    margin: 100px 140px 100px 220px;
+    background: linear-gradient(90deg, #005FAC 0%, rgba(0, 95, 172, 0.00) 100%), url('../images/watch.png');
+    border-radius: 15px;
+
+}
+
+.watch-container h1 {
+    padding: 80px 617px 20px 60px;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.watch-container button {
+    margin-left: 62px;
+    border: none;
+    padding: 8px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    background: #FFF;
+}
+
+/* footer style */
 
 
 
@@ -165,7 +194,8 @@ header {
         left: 30px;
     }
 
-    .previous-year-failure-container , .plans-container {
+    .previous-year-failure-container,
+    .plans-container {
         flex-direction: column;
     }
 
@@ -200,29 +230,31 @@ header {
 
     }
 
-    .plans-container{
+    .plans-container {
         margin: 0;
         padding: 0;
     }
 
-    .plans{
+    .plans {
         margin-bottom: 50px;
     }
 
-    .plans-container h3{
+    .plans-container h3 {
         font-size: 25px;
     }
 
 
-    .plans-container p{
+    .plans-container p {
         font-size: 20px;
     }
 
-    .plans-title{
+    .plans-title {
         text-align: center;
     }
 
-
+    .watch-container {
+        display: none;
+    }
 
 
 }
@@ -285,8 +317,17 @@ header {
         padding-top: 20px;
     }
 
-    .plans-content-container{
+    .plans-content-container {
         margin: 0 50px;
+    }
+
+    .watch-container{
+        margin-left: 50px;
+        width: 900px;
+    }
+
+    .watch-container h1{
+        padding: 70px 500px 20px 50px;
     }
 
 }
